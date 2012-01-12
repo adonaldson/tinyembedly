@@ -31,7 +31,7 @@ module Tinyembedly
     end
 
     def get_oembed
-      get(endpoint, :query => params)
+      self.class.get(endpoint, :query => params)
     end
 
     def params

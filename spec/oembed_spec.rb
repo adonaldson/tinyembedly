@@ -14,7 +14,7 @@ describe Tinyembedly::Oembed do
       oembed = Tinyembedly::Oembed.new
       oembed.stubs(:endpoint).returns('/endpoint')
       oembed.stubs(:params).returns('params_placeholder')
-      oembed.expects(:get).with('/endpoint', :query => 'params_placeholder')
+      Tinyembedly::Oembed.expects(:get).with('/endpoint', :query => 'params_placeholder')
 
       oembed.get_oembed
     end
