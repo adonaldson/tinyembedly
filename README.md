@@ -1,4 +1,4 @@
-# Tinyembedly
+# Tinyembedly [![Build Status](https://secure.travis-ci.org/dies-el/tinyembedly.png)](http://travis-ci.org/dies-el/tinyembedly)
 
 A super tiny Embedly oEmbed library, using HTTParty. It makes a GET request to Embed.ly and returns the response in the form of a hash.
 
