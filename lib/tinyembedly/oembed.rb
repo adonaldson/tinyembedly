@@ -1,5 +1,3 @@
-require 'httparty'
-
 module Tinyembedly
   class Oembed
     include HTTParty
