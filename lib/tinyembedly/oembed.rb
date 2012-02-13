@@ -1,7 +1,7 @@
 module Tinyembedly
   class Oembed
     include HTTParty
-    base_uri 'api.embed.ly'
+    base_uri BASE_URI
 
     attr_reader :response, :api_key, :url
     @@api_key = nil
