@@ -32,7 +32,9 @@ Thats it.
 
 # Contributors
 
-Go on. Goooo on. Goooooooo on!
+- Ebony Charlton
+
+Noone else. Could you help? Go on. Goooo on. Goooooooo on!
 
 # License
 
