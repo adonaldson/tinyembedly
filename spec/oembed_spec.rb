@@ -31,9 +31,10 @@ describe Tinyembedly::Oembed do
 
   describe "params" do
     it "returns a hash containing the url and api key in the format Embedly expects" do
-      oembed = Tinyembedly::Oembed.new(:url => 'url_placeholder', :api_key => 'fish')
+      oembed = Tinyembedly::Oembed.new(:url => 'url_placeholder', :api_key => 'fish', :width => '500')
       oembed.params[:url].should eq('url_placeholder')
       oembed.params[:key].should eq('fish')
+      oembed.params[:width].should eq('500')
     end
   end
 
