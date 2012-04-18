@@ -3,7 +3,7 @@ module Tinyembedly
     include HTTParty
     base_uri BASE_URI
 
-    attr_reader :response, :api_key, :url
+    attr_reader :response, :api_key, :url, :other_params
     @@api_key = nil
 
     def self.api_key=(value)
@@ -16,8 +16,9 @@ module Tinyembedly
     end
 
     def initialize(options = {})
-      @api_key = options[:api_key] || @@api_key
-      @url = options[:url]
+      @api_key = options.delete(:api_key) || @@api_key
+      @url = options.delete(:url)
+      @other_params = options
     end
 
     def to_hash
@@ -35,7 +36,7 @@ module Tinyembedly
     end
 
     def params
-      { :url => @url, :key => @api_key }
+      { :url => @url, :key => @api_key }.merge(@other_params)
     end
 
     protected
