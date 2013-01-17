@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = Tinyembedly::VERSION
   s.authors     = ["Andrew Donaldson"]
   s.email       = ["andrew@desto.net"]
-  s.homepage    = "https://github.com/dies-el/tinyembedly"
+  s.homepage    = "https://github.com/adonaldson/tinyembedly"
   s.summary     = %q{Fetch Embedly oEmbed data}
   s.description = %q{A super tiny Embedly oEmbed library, using HTTParty}
 
